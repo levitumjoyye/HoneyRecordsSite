@@ -1,0 +1,127 @@
+
+.logo {
+    height: 350px;
+    background-image: url(../images/back2page.jpg);
+    background-position: 50% 55%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ourproject {
+    text-align: center;
+    top: 50%;
+    position: relative;
+    font-family: 'Roboto Slab', serif;
+    text-transform: uppercase;
+    font-size: 40px;
+    border: 2px #ffffff ridge;
+    width: 25%;
+    margin: 0 auto;
+}
+
+.projects {
+    padding: 2.8rem;
+    background-image: url(../images/stu.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.project {
+    overflow: hidden;
+    box-shadow: 0px 0px 4px rgba(247, 0, 255, 0.63);
+    background-color: #56183b;
+}
+
+
+.case {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.serv {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -1rem 2.8rem -1rem;
+}
+
+.serv_col {
+    flex-basis: 25%;
+    padding: 1rem;
+}
+
+.artist {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.06rem;
+    font-weight: 700;
+}
+
+.track_title {
+    font-size: 1.06rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.vk {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+    .project {
+        max-width: 370px;
+    }
+}
+
+@media screen and (max-width: 565px) {
+    .project {
+        max-width: 370px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .serv_col {
+        flex-basis: 33.3%;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .serv_col {
+        flex-basis: 50%;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .serv_col {
+        flex-basis: 90%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .serv_col {
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 565px) {
+    .serv_col {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .ourproject {
+        width: 40%;;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .ourproject {
+        width: 60%;
+        ;
+    }
+}
