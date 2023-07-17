@@ -197,7 +197,6 @@ header {
 
 .works {
     padding: 2.8rem;
-    /*background-image: url(../HONEY/будка.jpg);*/
     background-image: url(../images/073.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -402,7 +401,7 @@ body.no-scroll {
     }
 }
 
-/* Настройка для модального окна BLOG */
+/* Настройка для модального окна */
 .modal__dialog--mm {
     max-width: 1200px;
     background-color: white;
@@ -712,13 +711,13 @@ body.no-scroll {
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 795px) {
     .burger {
         display: block;
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 795px) {
     .header {
         background-color: white;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
@@ -730,7 +729,7 @@ body.no-scroll {
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 795px) {
     .nav {
         width: 100%;
         height: auto;
@@ -750,7 +749,7 @@ body.no-scroll {
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 795px) {
     .nav_link {
         width: 100%;
         margin-left: 0;
@@ -758,7 +757,7 @@ body.no-scroll {
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 795px) {
     .intro {
         margin-top: 80px;
     }
@@ -771,14 +770,14 @@ body.no-scroll {
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 795px) {
     .intro_inner {
         padding-bottom: 4rem;
         background-size: 330px auto;
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 795px) {
     .intro_content {
         width: 60%;
     }
@@ -815,7 +814,7 @@ body.no-scroll {
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 795px) {
     .intro_photo {
         width: 290px;
     }
@@ -847,7 +846,7 @@ body.no-scroll {
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 795px) {
     .work {
         max-width: 370px;
     }
@@ -866,7 +865,7 @@ body.no-scroll {
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 795px) {
     .services_col {
         max-width: 50%;
     }
@@ -927,7 +926,7 @@ body.no-scroll {
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 795px) {
     .about_title {
         font-size: 2rem;
     }
@@ -945,14 +944,14 @@ body.no-scroll {
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 795px) {
     .about_bigtitle {
         font-size: 4rem;
     }
 }
 
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 795px) {
     .services_col {
         flex-basis: 50%;
     }
@@ -962,6 +961,14 @@ body.no-scroll {
     .services_col {
         flex-basis: 100%;
     }
+}
+
+@media screen and (max-width: 565px) {
+    .map {
+        width: 200px;
+        height: 200px;
+    }
+
 }
 
 /* Для экранов с шириной от 1024px и выше */
@@ -992,8 +999,8 @@ body.no-scroll {
     }
 }
 
-/* Для экранов с шириной от 480px до 767px */
-@media screen and (min-width: 480px) and (max-width: 767px) {
+/* Для экранов с шириной от 480px до 795px */
+@media screen and (min-width: 480px) and (max-width: 795px) {
     .about_inner {
         max-width: 720px;
         flex-direction: column;
