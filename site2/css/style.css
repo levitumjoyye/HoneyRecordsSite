@@ -119,13 +119,15 @@ header {
     color: rgba(255, 255, 255, 0.7);
 }
 
-
 .nav-list{
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
     height: 100%;
+    list-style-type: none;
+    margin-top: 0;
 }
+
 
 .nav_link{
     margin-left: 2rem;
@@ -747,4 +749,15 @@ body.no-scroll {
 .right-list {
     width: 50%;
     padding-left: 4.2rem;
+}
+
+.back {
+    margin: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 0px;
+    border-radius: 1.8em;
+    background: none;
+    cursor: pointer;
 }

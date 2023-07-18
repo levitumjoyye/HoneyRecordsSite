@@ -127,11 +127,15 @@ $(".modalsNext").on("click", function (event) {
     currentSlider.slick("modalsNext");
 });
 
+// код не работает
+// const nav = document.querySelector('#nav');
+// const navBtn = document.querySelector('#nav-btn')
+// const navBtnImg = document.querySelector('#nav-btn-img')
 
-const navToggle = $("#navToggle")
-const nav = $("#nav")
-
-navToggle.on("click", function (event) {
-    event.preventDefault();
-    nav.toggleClass("show")
-})
+// navBtn.onclick = () => {
+//     if (nav.classList.toggle('open')) {
+//         navBtnImg.src = "./images/icons8-close.svg";
+//     } else {
+//         navBtnImg.src = "./images/nav_icon.svg";
+//     }
+// }

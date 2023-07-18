@@ -43,17 +43,15 @@
                     </div>
                 </div>
 
-                <nav class="nav open">
+                <nav id="nav" class="nav">
                     <!-- Доделать nav меню -->
                     <ul class="nav-list">
                         
-                        <a href="project.html" class="nav_link">Наши проекты</a>
+                        <li class="nav_item"><a href="project.html" class="nav_link">Наши проекты</a></li>
 
-                        <nav id="menu">
-                            <a href="#vniz" class="nav_link">О нас</a>
-                        </nav>
+                        <li class="nav_time"><nav id="menu"><a href="#vniz" class="nav_link">О нас</a></nav></li>
 
-                        <a href="#" class="nav_link" data-modal="#contact">Контакты</a>
+                        <li class="nav_time"><a href="#" class="nav_link" data-modal="#contact">Контакты</a></li>
                             <div id="contact" class="modal">
                                 <div class="modal__dialog modal__dialog--sm">
                                     <button class="modal__close" type="button" data-close=""><img src="images/cancel.svg" alt=""></button>
@@ -77,10 +75,10 @@
                                 </div>
                             </div>
 
-                        <a href="https://t.me/honeyrecords" target="_blank" class="nav_link nav_link--btn">Запишись</a>
+                        <li class="nav_item"><a href="https://t.me/honeyrecords" target="_blank" class="nav_link nav_link--btn">Запишись</a></li>
 
-                        <button class="nav_button">
-                            <img src="./images/nav_icon.svg" alt="Nav button">
+                        <button id="nav-btn" class="nav_button">
+                            <img id="nav-btn-img" src="./images/nav_icon.svg" alt="Nav button">
                         </button>
 
                     </ul>
