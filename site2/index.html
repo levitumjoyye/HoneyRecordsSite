@@ -8,11 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>HoneyRecords</title>
-    <link rel="shortcut icon" href="../site2/images/logo.png" type="image/png">
+    <link rel="shortcut icon" href="images/logo.png" type="image/png">
 
-    <link rel="stylesheet" href="../site2/css/style.css">
-    <link rel="stylesheet" href="../site2/css/animate.css">
-    <link rel="stylesheet" href="../site2/css/okno.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/okno.css">
+    <link rel="stylesheet" href="css/media.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,7 +35,7 @@
             <div class="header_inner">
                 <div class="user">
                     <div class="user_avatar">
-                        <img src="../site2/images/logo.png" alt="">
+                        <img src="images/logo.png" alt="">
                     </div>
                     <div class="user_content">
                         <div class="user_name">Honey<br>Records</div>
@@ -42,38 +43,47 @@
                     </div>
                 </div>
 
-                <nav class="nav">
+                <nav class="nav open">
+                    <!-- Доделать nav меню -->
+                    <ul class="nav-list">
+                        
+                        <a href="project.html" class="nav_link">Наши проекты</a>
 
-                    <a href="../site2/project.html" class="nav_link">Наши проекты</a>
+                        <nav id="menu">
+                            <a href="#vniz" class="nav_link">О нас</a>
+                        </nav>
 
-                    <nav id="menu">
-                        <a href="#vniz" class="nav_link">О нас</a>
-                    </nav>
+                        <a href="#" class="nav_link" data-modal="#contact">Контакты</a>
+                            <div id="contact" class="modal">
+                                <div class="modal__dialog modal__dialog--sm">
+                                    <button class="modal__close" type="button" data-close=""><img src="images/cancel.svg" alt=""></button>
+                                    <div class="four">
+                                        <div class="line-four">
+                                            <div class="left-list">
+                                                <h4 class="contact_info-stu">Контактная информация</h4>
+                                                <h5 class="Address-stu">Адрес:<div> улица Чайковского, 24, Санкт-Петербург </div></h5><br>    
+                                            </div>
 
-                    <a href="#" class="nav_link" data-modal="#contact">Контакты</a>
-                        <div id="contact" class="modal">
-                            <div class="modal__dialog modal__dialog--sm">
-                                <button class="modal__close" type="button" data-close=""><img src="../site2/images/cancel.svg" alt=""></button>
-                                <div class="four">
-                                    <div class="line-four">
-                                        <div class="left-list">
-                                            <h4 class="contact_info-stu">Контактная информация</h4>
-                                            <h5 class="Address-stu">Адрес:<div> улица Чайковского, 24, Санкт-Петербург </div></h5><br>    
-                                        </div>
-
-                                        <div class="line"></div>
-                                        <div class="right-list">
-                                            <h4 class="contact_info-stu">Где нас найти</h4>
-                                            <iframe src="https://vk.com/video_ext.php?oid=-172202974&id=456239055&hash=cab89731beacca3f&hd=1" width="316.81"
-                                                height="460" allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" frameborder="0"
-                                                allowfullscreen></iframe>
+                                            <div class="line"></div>
+                                            
+                                            <div class="right-list">
+                                                <h4 class="contact_info-stu">Где нас найти</h4>
+                                                <iframe src="https://vk.com/video_ext.php?oid=-172202974&id=456239055&hash=cab89731beacca3f&hd=1" width="316.81"
+                                                    height="460" allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" frameborder="0" allowfullscreen>
+                                                </iframe>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                    <a href="https://t.me/honeyrecords" target="_blank" class="nav_link nav_link--btn">Запишись</a>
+                        <a href="https://t.me/honeyrecords" target="_blank" class="nav_link nav_link--btn">Запишись</a>
+
+                        <button class="nav_button">
+                            <img src="./images/nav_icon.svg" alt="Nav button">
+                        </button>
+
+                    </ul>
                 </nav>
             </div>
         </div>
@@ -96,7 +106,7 @@
                 <!--Готовый трек-->
                 <div class="services_col">
                     <div class="work" data-modal="#poster1">
-                        <img src="../site2/images/disk.png" alt="" class="work_image">
+                        <img src="images/disk.png" alt="" class="work_image">
                         <div class="work_content">
                             <div class="work_title">Готовый трек</div>
                             <div class="money">от 3000 руб.</div>
@@ -106,7 +116,7 @@
 
                 <div class="modal" id="poster1">
                     <div class="modal__dialog modal__dialog--mm">
-                        <button class="modal__close" type="button" data-close=""><img src="../site2/images/cancel.svg" alt=""></button>
+                        <button class="modal__close" type="button" data-close=""><img src="images/cancel.svg" alt=""></button>
                         <div class="modal-work">
                             <div class="modal-work_previews">
                                 <div data-slider="slick">
@@ -140,7 +150,7 @@
                 <!--ЗАПИСЬ-->
                 <div class="services_col">
                     <div class="work" data-modal="#poster2">
-                        <img src="../site2/images/mic.png" alt="" class="work_image">
+                        <img src="images/mic.png" alt="" class="work_image">
                         <div class="work_content">
                             <div class="work_title">Запись</div>
                             <div class="money">от 1000 руб.</div>
@@ -150,7 +160,7 @@
 
                 <div class="modal" id="poster2">
                     <div class="modal__dialog modal__dialog--mm">
-                        <button class="modal__close" type="button" data-close=""><img src="../site2/images/cancel.svg" alt=""></button>
+                        <button class="modal__close" type="button" data-close=""><img src="images/cancel.svg" alt=""></button>
                         <div class="modal-work">
                             <div class="modal-work_previews">
                                 <div data-slider="slick">
@@ -182,7 +192,7 @@
                 <!--СВЕДЕНИЕ-->
                 <div class="services_col">
                     <div class="work" data-modal="#poster3">
-                        <img src="../site2/images/pult.png" alt="" class="work_image">
+                        <img src="images/pult.png" alt="" class="work_image">
                         <div class="work_content">
                             <div class="work_title">Сведение</div>
                             <div class="money">от 3000 руб.</div>
@@ -192,7 +202,7 @@
 
                 <div class="modal" id="poster3">
                     <div class="modal__dialog modal__dialog--mm">
-                        <button class="modal__close" type="button" data-close=""><img src="../site2/images/cancel.svg" alt=""></button>
+                        <button class="modal__close" type="button" data-close=""><img src="images/cancel.svg" alt=""></button>
                         <div class="modal-work">
                             <div class="modal-work_previews">
                                 <div data-slider="slick">
@@ -225,7 +235,7 @@
                 <!--ГОСТРАЙТИНГ-->
                 <div class="services_col">
                     <div class="work" data-modal="#poster4">
-                        <img src="../site2/images/file.png" alt="" class="work_image">
+                        <img src="images/file.png" alt="" class="work_image">
                         <div class="work_content">
                             <div class="work_title">Гострайтинг</div>
                             <div class="money">от 3000 руб.</div>
@@ -235,7 +245,7 @@
 
                 <div class="modal" id="poster4">
                     <div class="modal__dialog modal__dialog--mm">
-                        <button class="modal__close" type="button" data-close=""><img src="../site2/images/cancel.svg" alt=""></button>
+                        <button class="modal__close" type="button" data-close=""><img src="images/cancel.svg" alt=""></button>
                         <div class="modal-work">
                             <div class="modal-work_previews">
                                 <div data-slider="slick">
@@ -270,7 +280,7 @@
                 <!--ИНСТУРМЕНТАЛ-->
                 <div class="services_col">
                     <div class="work" data-modal="#poster5">
-                        <img src="../site2/images/piano.png" alt="" class="work_image">
+                        <img src="images/piano.png" alt="" class="work_image">
                         <div class="work_content">
                             <div class="work_title">Инструментал</div>
                             <div class="money">от 3000 руб.</div>
@@ -280,7 +290,7 @@
 
                 <div class="modal" id="poster5">
                     <div class="modal__dialog modal__dialog--mm">
-                        <button class="modal__close" type="button" data-close=""><img src="../site2/images/cancel.svg" alt=""></button>
+                        <button class="modal__close" type="button" data-close=""><img src="images/cancel.svg" alt=""></button>
                         <div class="modal-work">
                             <div class="modal-work_previews">
                                 <div data-slider="slick">
@@ -312,7 +322,7 @@
                 <!--НОЧНАЯ ЗАПИСЬ-->
                 <div class="services_col">
                     <div class="work" data-modal="#poster6">
-                        <img src="../site2/images/lyna.png" alt="" class="work_image">
+                        <img src="images/lyna.png" alt="" class="work_image">
                         <div class="work_content">
                             <div class="work_title">ночная запись</div>
                             <div class="money">от 1000 руб.</div>
@@ -322,7 +332,7 @@
 
                 <div class="modal" id="poster6">
                     <div class="modal__dialog modal__dialog--mm">
-                        <button class="modal__close" type="button" data-close=""><img src="../site2/images/cancel.svg" alt=""></button>
+                        <button class="modal__close" type="button" data-close=""><img src="images/cancel.svg" alt=""></button>
                         <div class="modal-work">
                             <div class="modal-work_previews">
                                 <div data-slider="slick">
@@ -354,7 +364,7 @@
                 <!--ТРЕК ПОД КЛЮЧ-->
                 <div class="services_col">
                     <div class="work" data-modal="#poster7">
-                        <img src="../site2/images/nota.png" alt="" class="work_image">
+                        <img src="images/nota.png" alt="" class="work_image">
                         <div class="work_content">
                             <div class="work_title">трек под ключ</div>
                             <div class="money">от 8000 руб.</div>
@@ -364,7 +374,7 @@
 
                 <div class="modal" id="poster7">
                     <div class="modal__dialog modal__dialog--mm">
-                        <button class="modal__close" type="button" data-close=""><img src="../site2/images/cancel.svg" alt=""></button>
+                        <button class="modal__close" type="button" data-close=""><img src="images/cancel.svg" alt=""></button>
                         <div class="modal-work">
                             <div class="modal-work_previews">
                                 <div data-slider="slick">
@@ -396,7 +406,7 @@
                 <!--АЛЬБОМ-->
                 <div class="services_col">
                     <div class="work" data-modal="#poster8">
-                        <img src="../site2/images/notap.png" alt="" class="work_image">
+                        <img src="images/notap.png" alt="" class="work_image">
                         <div class="work_content">
                             <div class="work_title">Альбом</div>
                             <div class="money">от 15000 руб.</div>
@@ -406,7 +416,7 @@
 
                 <div class="modal" id="poster8">
                     <div class="modal__dialog modal__dialog--mm">
-                        <button class="modal__close" type="button" data-close=""><img src="../site2/images/cancel.svg" alt=""></button>
+                        <button class="modal__close" type="button" data-close=""><img src="images/cancel.svg" alt=""></button>
                         <div class="modal-work">
                             <div class="modal-work_previews">
                                 <div data-slider="slick">
@@ -439,7 +449,7 @@
                 <!--АРЕНДА СТУДИИ-->
                 <div class="services_col">
                     <div class="work" data-modal="#poster9">
-                        <img src="../site2/images/rent.png" alt="" class="work_image">
+                        <img src="images/rent.png" alt="" class="work_image">
                         <div class="work_content">
                             <div class="work_title">Аренда студии</div>
                             <div class="money">от 800 руб.</div>
@@ -448,7 +458,7 @@
                 </div>
                 <div class="modal" id="poster9">
                     <div class="modal__dialog modal__dialog--mm">
-                        <button class="modal__close" type="button" data-close=""><img src="../site2/images/cancel.svg" alt=""></button>
+                        <button class="modal__close" type="button" data-close=""><img src="images/cancel.svg" alt=""></button>
                         <div class="modal-work">
                             <div class="modal-work_previews">
                                 <div data-slider="slick">
@@ -481,7 +491,7 @@
                 <!--ОБЛОЖКА-->
                 <div class="services_col">
                     <div class="work" data-modal="#poster10">
-                        <img src="../site2/images/paint.png" alt="" class="work_image">
+                        <img src="images/paint.png" alt="" class="work_image">
                         <div class="work_content">
                             <div class="work_title">Обложка</div>
                             <div class="money">от 2000 руб.</div>
@@ -490,7 +500,7 @@
                 </div>
                 <div class="modal" id="poster10">
                     <div class="modal__dialog modal__dialog--mm">
-                        <button class="modal__close" type="button" data-close=""><img src="../site2/images/cancel.svg" alt=""></button>
+                        <button class="modal__close" type="button" data-close=""><img src="images/cancel.svg" alt=""></button>
                         <div class="modal-work">
                             <div class="modal-work_previews">
                                 <div data-slider="slick">
@@ -522,7 +532,7 @@
                 <!--ПРОМО-->
                 <div class="services_col">
                     <div class="work" data-modal="#poster11">
-                        <img src="../site2/images/youtube.png" alt="" class="work_image">
+                        <img src="images/youtube.png" alt="" class="work_image">
                         <div class="work_content">
                             <div class="work_title">Промо</div>
                             <div class="money">от 1000 руб.</div>
@@ -531,7 +541,7 @@
                 </div>
                 <div class="modal" id="poster11">
                     <div class="modal__dialog modal__dialog--mm">
-                        <button class="modal__close" type="button" data-close=""><img src="../site2/images/cancel.svg" alt=""></button>
+                        <button class="modal__close" type="button" data-close=""><img src="images/cancel.svg" alt=""></button>
                         <div class="modal-work">
                             <div class="modal-work_previews">
                                 <div data-slider="slick">
@@ -563,7 +573,7 @@
                 <!--КЛИП-->
                 <div class="services_col">
                     <div class="work" data-modal="#poster12">
-                        <img src="../site2/images/play.png" alt="" class="work_image">
+                        <img src="images/play.png" alt="" class="work_image">
                         <div class="work_content">
                             <div class="work_title">Клип</div>
                             <div class="money">от 10000 руб.</div>
@@ -572,7 +582,7 @@
                 </div>
                 <div class="modal" id="poster12">
                     <div class="modal__dialog modal__dialog--mm">
-                        <button class="modal__close" type="button" data-close=""><img src="../site2/images/cancel.svg" alt=""></button>
+                        <button class="modal__close" type="button" data-close=""><img src="images/cancel.svg" alt=""></button>
                         <div class="modal-work">
                             <div class="modal-work_previews">
                                 <div data-slider="slick">
@@ -637,31 +647,31 @@
                                     <div class="itc-slider__items">
                                         <div class="itc-slider__item">
                                             <!-- Контент 1 слайда -->
-                                            <img class="pic" src="../site2/images/студия1.jpg" alt="">
+                                            <img class="pic" src="images/студия1.jpg" alt="">
                                         </div>
                                         <div class="itc-slider__item">
                                             <!-- Контент 2 слайда -->
-                                            <img class="pic" src="../site2/images/студия2.jpg" alt="">
+                                            <img class="pic" src="images/студия2.jpg" alt="">
                                         </div>
                                         <div class="itc-slider__item">
                                             <!-- Контент 3 слайда -->
-                                            <img class="pic" src="../site2/images/студия3.jpg" alt="">
+                                            <img class="pic" src="images/студия3.jpg" alt="">
                                         </div>
                                         <div class="itc-slider__item">
                                             <!-- Контент 4 слайда -->
-                                            <img class="pic" src="../site2/images/студия4.jpg" alt="">
+                                            <img class="pic" src="images/студия4.jpg" alt="">
                                         </div>
                                         <div class="itc-slider__item">
                                             <!-- Контент 5 слайда -->
-                                            <img class="pic" src="../site2/images/студия5.jpg" alt="">
+                                            <img class="pic" src="images/студия5.jpg" alt="">
                                         </div>
                                         <div class="itc-slider__item">
                                             <!-- Контент 6 слайда -->
-                                            <img class="pic" src="../site2/images/студия6.jpg" alt="">
+                                            <img class="pic" src="images/студия6.jpg" alt="">
                                         </div>
                                         <div class="itc-slider__item">
                                             <!-- Контент 7 слайда -->
-                                            <img class="pic" src="../site2/images/студия7.jpg" alt="">
+                                            <img class="pic" src="images/студия7.jpg" alt="">
                                         </div>
                                     
                                     </div>
@@ -693,9 +703,9 @@
         <div class="container">
             <div class="row">
                 <div class="social">
-                    <a href="https://vk.com/honeyrecords" class="social_link" target="_blank"><img src="../site2/images/vkontakte.svg"alt=""></a>
-                    <a href="https://instagram.com/_honey.records_?igshid=YmMyMTA2M2Y=" class="social_link" target="_blank"><img src="../site2/images/in.svg" alt=""></a>
-                    <a href="https://t.me/honeyrecordshome" class="social_link" target="_blank"><img src="../site2/images/tg.svg"alt=""></a>
+                    <a href="https://vk.com/honeyrecords" class="social_link" target="_blank"><img src="images/vkontakte.svg"alt=""></a>
+                    <a href="https://instagram.com/_honey.records_?igshid=YmMyMTA2M2Y=" class="social_link" target="_blank"><img src="images/in.svg" alt=""></a>
+                    <a href="https://t.me/honeyrecordshome" class="social_link" target="_blank"><img src="images/tg.svg"alt=""></a>
                 </div>
             </div>
         </div>

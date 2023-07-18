@@ -1,0 +1,358 @@
+@media screen and (max-width: 1280px) {
+    .interactive {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 835px) {
+    .burger {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 835px) {
+    .header {
+        background-color: white;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1000;
+    }
+}
+
+
+/* оптимизировать */
+@media screen and (max-width: 835px) {
+    .nav-list {
+        padding: 1rem;
+        z-index: 1000;
+        align-items: center;
+    }
+
+    .nav_button{
+        display: block;
+    }
+    
+
+    .nav_link {
+        width: 100%;
+        margin-left: 0;
+        margin: 1rem 0.5rem;
+        display: none;
+    }
+    
+    .intro {
+        margin-top: 80px;
+    }
+
+    .nav.open .nav-list {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: white;
+
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+        padding: 46px 30px;
+
+    }
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 991px) {
+    .intro_inner {
+        padding-bottom: 3rem;
+        background-size: 400px auto;
+    }
+}
+
+@media screen and (max-width: 835px) {
+    .intro_inner {
+        padding-bottom: 4rem;
+        background-size: 330px auto;
+    }
+}
+
+@media screen and (max-width: 835px) {
+    .intro_content {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 565px) {
+    .intro_inner {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .intro_subtitle {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .intro_title {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .intro_text {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .intro_photo {
+        width: 320px;
+        right: 15px;
+    }
+}
+
+@media screen and (max-width: 835px) {
+    .intro_photo {
+        width: 290px;
+    }
+}
+
+@media screen and (max-width: 565px) {
+    .intro_photo {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .btn {
+        font-size: 1rem;
+        padding: 1em 1.5em;
+        min-width: 150px;
+    }
+}
+
+@media screen and (max-width: 565px) {
+    .btn {
+        display: block;
+        width: 100%;
+    }
+
+    .btn+.btn {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 835px) {
+    .work {
+        max-width: 370px;
+    }
+}
+
+@media screen and (max-width: 565px) {
+    .work {
+        max-width: 370px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .services_col {
+        flex-basis: 33.3%;
+    }
+}
+
+@media screen and (max-width: 835px) {
+    .services_col {
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 565px) {
+    .services_col {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .about {
+        margin: 3rem 0;
+    }
+}
+
+@media screen and (max-width: 991px) {
+
+    .about_photo,
+    .about_content {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .about_photo {
+        order: 2;
+    }
+
+    .about_photo:before {
+        width: 100%;
+        height: 300px;
+        left: 0;
+    }
+
+    .about_photo img {
+        position: relative;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .about_content {
+        order: 1;
+        margin-bottom: 2rem;
+        padding-left: 0;
+        align-items: center;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .about_title {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 835px) {
+    .about_title {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .about_bigtitle {
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .about_bigtitle {
+        position: static;
+    }
+}
+
+@media screen and (max-width: 835px) {
+    .about_bigtitle {
+        font-size: 4rem;
+    }
+}
+
+
+@media screen and (max-width: 835px) {
+    .services_col {
+        flex-basis: 50%;
+    }
+}
+
+@media screen and (max-width: 565px) {
+    .services_col {
+        flex-basis: 100%;
+    }
+}
+
+@media screen and (max-width: 565px) {
+    .map {
+        width: 200px;
+        height: 200px;
+    }
+
+}
+
+/* Для экранов с шириной от 1024px и выше */
+@media screen and (min-width: 1024px) {
+    .about_inner {
+        max-width: 1200px;
+    }
+}
+
+/* Для экранов с шириной от 768px до 1023px */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .about_inner {
+        max-width: 960px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about_photo,
+    .about_content {
+        width: 100%;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .about_bigtitle {
+        font-size: 4.5rem;
+        left: 0;
+    }
+}
+
+/* Для экранов с шириной от 480px до 835px */
+@media screen and (min-width: 480px) and (max-width: 835px) {
+    .about_inner {
+        max-width: 720px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about_photo,
+    .about_content {
+        width: 100%;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .about_bigtitle {
+        font-size: 4.5rem;
+        left: 0;
+    }
+
+    .about_title {
+        font-size: 2.5rem;
+    }
+}
+
+/* Для экранов с шириной менее 480px */
+@media screen and (max-width: 479px) {
+    .about_inner {
+        max-width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about_photo,
+    .about_content {
+        width: 100%;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .about_bigtitle {
+        font-size: 4.5rem;
+        left: 0;
+    }
+
+    .about_title {
+        font-size: 2.5rem;
+    }
+}
