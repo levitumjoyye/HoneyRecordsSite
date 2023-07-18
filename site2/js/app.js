@@ -1,3 +1,28 @@
+document.addEventListener('DOMContentLoaded', function () {
+    const nav = document.querySelector('#nav');
+    const navBtn = document.querySelector('#nav-btn');
+    const navBtnImg = document.querySelector('#nav-btn-img');
+
+    navBtn.onclick = () => {
+        window.scrollTo(0, 0);
+        nav.classList.toggle('nav-open');
+        if (nav.classList.contains('nav-open')) {
+            navBtnImg.src = "./images/icons8-close.svg";
+        } else {
+            navBtnImg.src = "./images/nav_icon.svg";
+        }
+    };
+});
+
+
+const nav = document.querySelector('#nav');
+const aboutUsLine = document.querySelector('#menu a');
+
+aboutUsLine.onclick = () => {
+    nav.classList.remove('nav-open');
+};
+
+
 const modalCall = $("[data-modal]");
 
 modalCall.on("click", function (event) {
@@ -127,15 +152,4 @@ $(".modalsNext").on("click", function (event) {
     currentSlider.slick("modalsNext");
 });
 
-// код не работает
-// const nav = document.querySelector('#nav');
-// const navBtn = document.querySelector('#nav-btn')
-// const navBtnImg = document.querySelector('#nav-btn-img')
 
-// navBtn.onclick = () => {
-//     if (nav.classList.toggle('open')) {
-//         navBtnImg.src = "./images/icons8-close.svg";
-//     } else {
-//         navBtnImg.src = "./images/nav_icon.svg";
-//     }
-// }

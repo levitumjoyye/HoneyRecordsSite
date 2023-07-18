@@ -32,19 +32,15 @@
 /* nav работает, но с переменным успехом */
 @media screen and (max-width: 835px) {
 
-    .nav_button{
-        display: block;
-    }
-    
 
     .nav_link {
         display: none;
     }
     
-    .nav.open .nav-list {
+    .nav.nav-open .nav-list {
         display: flex;
         flex-direction: column;
-        row-gap: 40px;
+        row-gap: 80px;
         position: fixed;
         top: 0;
         bottom: 0;
@@ -56,21 +52,37 @@
         padding: 46px 30px;
     }
 
-    .nav.open .nav_link {
+    .nav.nav-open .nav_link {
         color: black;
         display: inline;
     }
 
-    .nav.open .nav_link--btn {
+    .nav.nav-open .nav_link--btn {
         border: 2px solid #000000;
         border-radius: 20px;
     }
 
-    .nav_button {
-        position: fixed;
+    .nav.nav-open .nav_button {
+        display: block;
+        position: absolute;
         z-index: 9;
         right: 0;
         margin-right: 2rem;
+        background-color: white;
+        border: 0;
+    }
+
+    .nav_button {
+        display: block;
+        position: absolute;
+        z-index: 9;
+        right: 0;
+        margin-right: 2rem;
+    }
+
+    .nav_link--btn:hover {
+        background-color: #f0bb0e;
+        color: #ffffff;
     }
 }
 
