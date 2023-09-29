@@ -83,3 +83,8 @@
     color: #ffffff;
     font-weight: 700;
 }
+
+.option {
+    display: flex;
+    justify-content: center;    
+}

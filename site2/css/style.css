@@ -493,7 +493,7 @@ body.no-scroll {
 }
 
 .modal-work_previews {
-    width: 66%;
+    width: 65%;
     position: relative;
     overflow: hidden;
 }
@@ -511,7 +511,7 @@ body.no-scroll {
 .modal-work_photo {
     position: absolute;
     top: 50%;
-    left: 45%;
+    left: 50%;
     z-index: 1;
     transform: translate3d(-50%, -50%, 0);
 }

@@ -1,13 +1,16 @@
-// Получаем ссылку "Видеоработы" и элемент с классом .case
-const link = document.querySelector('#video');
-const caseElement = document.querySelector('case');
+document.getElementById("videoworks").addEventListener("click", function () {
+  // Select the elements to replace
+  var elementsToReplace = document.querySelectorAll(".case .serv_col");
 
-// Добавляем обработчик события при клике на ссылку
-link.addEventListener('click', function(event) {
-  // Предотвращаем переход по ссылке
-  event.preventDefault();
-  
-  // Изменяем стиль элемента .case, чтобы он стал скрытым
-  caseElement.style.display = 'none';
+  // Clone and append the elements to the .video div
+  var videoContainer = document.querySelector(".video");
+  for (var i = 0; i < elementsToReplace.length; i++) {
+    var clone = elementsToReplace[i].cloneNode(true);
+    videoContainer.appendChild(clone);
+  }
+
+  // Remove the original elements from .case
+  for (var i = 0; i < elementsToReplace.length; i++) {
+    elementsToReplace[i].remove();
+  }
 });
-
