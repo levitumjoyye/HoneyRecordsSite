@@ -77,7 +77,7 @@ $(".modal__dialog").on("click", function (event) {
 });
 
 
-
+//плавная прокрутка
 $(document).ready(function(){
     $("#menu").on("click","a", function (event) {
         //отменяем стандартную обработку нажатия по ссылке
@@ -95,32 +95,23 @@ $(document).ready(function(){
 });
 
 
-const worksSlider = $('[data-slider="slick"]');
-
-worksSlider.slick({
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    fade: true,
-    arrows: false,
-    dots: true
+$(document).ready(function(){
+    $("#contacts").on("click","a", function (event) {
+        //отменяем стандартную обработку нажатия по ссылке
+        event.preventDefault();
+ 
+        //забираем идентификатор бока с атрибута href
+        var id  = $(this).attr('href'),
+ 
+        //узнаем высоту от начала страницы до блока на который ссылается якорь
+            top = $(id).offset().top;
+         
+        //анимируем переход на расстояние - top за 1500 мс
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
 });
 
-$(".slickPrev").on("click", function (event) {
-    event.preventDefault();
 
-    let currentSlider = $(this).parents('.modal').find('[data-slider="slick"]');
-
-    currentSlider.slick("slickPrev");
-});
-
-$(".slickNext").on("click", function (event) {
-    event.preventDefault();
-
-    let currentSlider = $(this).parents('.modal').find('[data-slider="slick"]');
-
-    currentSlider.slick("slickNext");
-});
 
 
 /* Slider: https://kenwheeler.github.io/slick/ =====================*/

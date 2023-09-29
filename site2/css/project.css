@@ -41,6 +41,13 @@
     padding: 0 1rem;
 }
 
+.video {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
 .serv {
     display: flex;
     flex-wrap: wrap;
@@ -71,8 +78,8 @@
 
 .new {
     position: absolute;
-    background: #ff0000;
+    background: rgb(248 6 255 / 48%);
     padding: 6px;
-    color: #000;
+    color: #ffffff;
     font-weight: 700;
 }
