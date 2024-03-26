@@ -69,7 +69,7 @@
 .modal__photo-setting {
     border-radius: 15px;
     width: 700px;
-    height:auto;
+    height: auto;
 }
 
 .modal__link-Btn {
@@ -237,7 +237,7 @@ p {
 
 .container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1250px;
     margin: 0 auto;
     padding: 0 1rem;
 }
@@ -361,7 +361,7 @@ p {
 }
 
 .works {
-    padding: 2rem;
+    padding: 3rem 0;
     background-image: url(../images/Background/073.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -414,6 +414,9 @@ p {
     row-gap: 30px;
 
     list-style-type: none;
+
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .services_col {
@@ -443,7 +446,6 @@ ul {
 .about_content {
     width: 50%;
     margin-top: 2rem;
-    align-content: flex-end;
     flex: 1;
 }
 
@@ -532,7 +534,7 @@ footer {
     font-size: 18px;
 }
 
-.custom-shape-divider-top-1706658408 {
+.custom-shape-divider-top-1706784622 {
     position: absolute;
     top: 0;
     left: 0;
@@ -541,21 +543,23 @@ footer {
     line-height: 0;
 }
 
-.custom-shape-divider-top-1706658408 svg {
+.custom-shape-divider-top-1706784622 svg {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
     height: 56px;
 }
 
-.custom-shape-divider-top-1706658408 .shape-fill {
-    fill: #690C35;
+.custom-shape-divider-top-1706784622 .shape-fill {
+    fill: #640B31;
 }
 
-/** For mobile devices **/
-@media (max-width: 767px) {
-    .custom-shape-divider-top-1706658408 svg {
-        width: calc(100% + 1.3px);
-        height: 56px;
-    }
+.services__title {
+    color: rgb(255 167 34);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 1rem 0;
+    position: relative;
 }

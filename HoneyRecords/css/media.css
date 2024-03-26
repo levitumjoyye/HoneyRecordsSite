@@ -1,3 +1,9 @@
+@media screen and (max-width: 1280px) {
+    .works{
+        background-image: url(../images/Background/073-1280.jpg);
+    }
+}
+
 /* 1199px */
 @media screen and (max-width: 1199px) {
     .about_title {
@@ -89,6 +95,10 @@
     .ourproject {
         width: 40%;
     }
+
+    .nav_link {
+        font-size: 0.73rem;
+    }
 }
 
 /* 835px */
@@ -169,7 +179,7 @@
         background-color: black;
         transition: all .2s;
         overflow: auto;
-        z-index: 1;
+        z-index: 4;
     }
 
     .nav-list {
@@ -192,6 +202,10 @@
     .project {
         max-width: 370px;
     }
+
+    .header__index {
+        background-image:url(../images/Background/honeyMobileBG.png) ;
+    }
 }
 
 /* 565px */
@@ -200,7 +214,7 @@
         width: 100%;
     }
 
-    .btn {
+    /* .btn {
         display: block;
         width: 100%;
     }
@@ -208,7 +222,7 @@
     .btn+.btn {
         margin-left: 0;
         margin-top: 1rem;
-    }
+    } */
 
     .work {
         max-width: 370px;
@@ -264,8 +278,6 @@
 
     .about_content {
         width: 100%;
-        padding-left: 0;
-        text-align: center;
     }
 
     .about_bigtitle {
@@ -345,8 +357,6 @@
 
     .about_content {
         width: 100%;
-        padding-left: 0;
-        text-align: center;
     }
 
     .about_bigtitle {
@@ -361,8 +371,6 @@
 
     .about_content {
         width: 100%;
-        padding-left: 0;
-        text-align: center;
     }
 
     .about_bigtitle {

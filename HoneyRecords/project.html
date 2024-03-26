@@ -6,14 +6,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#f700ffa1">
+    <meta name="theme-color" content="#640B31">
     <meta name="description" content="Мы студия звукозаписи, занимающаяся записью вокала и инструментов, сведением и мастерингом треков, а также созданием инструменталов.">
-    <meta name="keywords" content="Звукозапись, Студия звукозаписи, СПБ, Санкт-Петербург, Музыка, Запись, Треки, Сведение, Вокал, Песни">
+    <meta name="keywords" content="Звукозапись, Студия звукозаписи, СПБ, Санкт-Петербург, Музыка, Запись, Треки, Сведение, Вокал, Проекты">
 
     <meta property="og:title" content="HoneyRecords | Наши проекты"/>
     <meta property="og:description" content="Мы студия звукозаписи, занимающаяся записью вокала и инструментов, сведением и мастерингом треков, а также созданием инструменталов."/>
     <meta property="og:type" content="website"/>
-    <meta property="og:url" content="HoneyRecords/index.html"/>
+    <meta property="og:url" content="*"/>
     <meta property="og:image" content="images/mic.png"/>
     <meta property="og:image:alt" content="Студия звукозаписи"/>
 
@@ -30,278 +30,328 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 </head>
 
 <body>
     
-    <header class="header__projects">
-        <section class="logo">
-            <div class="container">
-                
-                <div class="header_inner">
-                    <div class="studInfo">
-                        <div class="studio_logo">
-                            <a href="images/zap.PNG" target="_blank" style="cursor: default;"><img src="images/icons/logo.png" alt=""></a>
-                        </div>
-                        <div class="studio_content">
-                            <div class="studio_name">Honey<br>Records</div>
-                            <div class="studio_location">Saint Petersburg</div>
-                        </div>
+    <header class="header__project">    
+
+        <!--Header-->
+        <div class="container">
+            <div class="header_inner">
+                <div class="studInfo">
+                    <div class="studio_logo">
+                        <a href="images/zap.PNG" target="_blank" style="cursor: default;"><img src="images/icons/logo.png" alt="logo"></a>
                     </div>
-        
-                    <!--Navigation menu-->
-                    <div class="header__menu">
-        
-                        <div class="menu__icon">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-        
-                        <nav class="menu__body">
-                            <ul class="nav-list">
-                                <li class="menu__item"><a href="https://t.me/honeyrecords" target="_blank" class="nav_link nav_link--btn">Запишись</a></li>
-                            </ul>
-                        </nav>
-        
+                    <div class="studio_content">
+                        <div class="studio_name">Honey<br>Records</div>
+                        <div class="studio_location">Saint Petersburg</div>
                     </div>
                 </div>
+
+                <!--Navigation menu-->
+                <div class="header__menu">
+
+                    <div class="menu__icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <nav class="menu__body">
+                        <ul class="nav-list">
+                            <li class="menu__item"><a href="index.html" class="nav_link">На главную страницу</a></li>
+                            <li class="menu__item"><a href="equipment.html" class="nav_link">Оборудование</a></li>
+                            <li class="menu__item"><a href="#contact" class="nav_link">Контакты</a></li>
+                            <li class="menu__item"><a href="https://t.me/honeyrecords" target="_blank" class="nav_link nav_link--btn">Запишись</a></li>
+                        </ul>
+                    </nav>
+
+                </div>
             </div>
-           
-            <div class="ourproject">our projects</div>
+        </div>
+        
+         <div class="container"></div>
 
-        </section>
     </header>
-
-
 
     <div class="projects">
         <div class="case">
-            <div class="serv">
+            
+            <div class="category">
+                <button class="category__item" href="#" data-filter="all">ВСЕ</button>
+                <button class="category__item" href="#" data-filter="audio">ТРЕКИ</button>
+                <button class="category__item" href="#" data-filter="video">СНИППЕТЫ</button>
+            </div>
 
-                <!--Настырней-->
-                <div class="serv_col">
-                    <a href="https://band.link/nastyrnei" class="vk" target="_blank">
-                        <div class="project">
-                            <link rel="stylesheet">
-                            <div class="new">NEW</div>
-                            <img src="images/tracks/nastyrney.jpg" alt="" class="work_image">
-                            <div class="work_content">
+            <ul class="track__card">
+
+                <!--1 Настырней-->
+                <li class="tracks" data-category="audio">
+                    <a href="https://band.link/nastyrnei" class="band" target="_blank">
+                        <div class="card">
+                            <div class="text__new">new</div>
+                            <img src="images/tracks/nastyrney.jpg" alt="services_img" class="card__photo">
+                            <div class="card__content">
                                 <div class="track_title">Настырней</div>
                                 <div class="artist">Unicorn</div>
                             </div>
                         </div>
                     </a>
-                </div>
+                </li>
 
-                <!--Ночью и днем-->
-                <div class="serv_col">
-                    <a href="https://band.link/nochyuidnem" class="vk" target="_blank">
-                        <div class="project">
-                            <link rel="stylesheet">
-                            <div class="new">NEW</div>
-                            <img src="images/tracks/night and day.jpg" alt="" class="work_image">
-                            <div class="work_content">
-                                <div class="track_title">Ночью и днем</div>
-                                <div class="artist">GOLDENN, KREEKI, Unicorn</div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                
-                <!--Зависимость-->
-                <div class="serv_col">
-                    <a href="https://band.link/zavisimostunicorn" class="vk" target="_blank">
-                        <div class="project">
-                            <link rel="stylesheet">
-                            <div class="new">NEW</div>
-                            <img src="images/tracks/zavisimost.jpg" alt="" class="work_image">
-                            <div class="work_content">
+                <!--2 Зависимость-->
+                <li class="tracks" data-category="audio">
+                    <a href="https://band.link/zavisimostunicorn" class="band" target="_blank">
+                        <div class="card">
+                            <img src="images/tracks/zavisimost.jpg" alt="services_img" class="card__photo">
+                            <div class="card__content">
                                 <div class="track_title">Зависимость</div>
                                 <div class="artist">Unicorn, GOLDENN</div>
                             </div>
                         </div>
                     </a>
-                </div>
+                </li>
 
-                <!--Мой день-->
-                <div class="serv_col">
-                    <a href="https://bfan.link/moy-den-1" class="vk" target="_blank">
-                        <div class="project">
-                            <link rel="stylesheet">
-                            <div class="new">NEW</div>
-                            <img src="images/tracks/myday.jpg" alt="" class="work_image">
-                            <div class="work_content">
+                <!--3 Ночью и днем-->
+                <li class="tracks" data-category="audio">
+                    <a href="https://band.link/nochyuidnem" class="band" target="_blank">
+                        <div class="card">
+                            <img src="images/tracks/night and day.jpg" alt="services_img" class="card__photo">
+                            <div class="card__content">
+                                <div class="track_title">Ночью и днем</div>
+                                <div class="artist">GOLDENN, KREEKI, Unicorn</div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+                <!--4 Мой день-->
+                <li class="tracks" data-category="audio">
+                    <a href="https://bfan.link/moy-den-1" class="band" target="_blank">
+                        <div class="card">
+                            <img src="images/tracks/myday.jpg" alt="services_img" class="card__photo">
+                            <div class="card__content">
                                 <div class="track_title">Мой день</div>
                                 <div class="artist">GOLDENN, KREEKI</div>
                             </div>
                         </div>
                     </a>
-                </div>
-    
-                <!--11am-->
-                <div class="serv_col">
-                    <a href="https://band.link/11am" class="vk" target="_blank">
-                        <div class="project">
-                            <img src="images/tracks/11am.jpg" alt="" class="work_image">
-                            <div class="work_content">
+                </li>
+
+                <!--5 11am-->
+                <li class="tracks" data-category="audio">
+                    <a href="https://band.link/11am" class="band" target="_blank">
+                        <div class="card">
+                            <img src="images/tracks/11am.jpg" alt="services_img" class="card__photo">
+                            <div class="card__content">
                                 <div class="track_title">11am</div>
                                 <div class="artist">Unicorn</div>
                             </div>
                         </div>
                     </a>
-                </div>
+                </li>
 
-                <!--dollar-->
-                <div class="serv_col">
-                    <a href="https://steezy.link/Dollar" class="vk" target="_blank">
-                        <div class="project">
-                            <img src="images/tracks/dollar.jpg" alt="" class="work_image">
-                            <div class="work_content">
+                <!--6 dollar-->
+                <li class="tracks" data-category="audio">
+                    <a href="https://steezy.link/Dollar" class="band" target="_blank">
+                        <div class="card">
+                            <img src="images/tracks/dollar.jpg" alt="services_img" class="card__photo">
+                            <div class="card__content">
                                 <div class="track_title">Dollar</div>
                                 <div class="artist">Unicorn</div>
                             </div>
                         </div>
                     </a>
-                </div>
+                </li>
 
-                <!--SaintP-->
-                <div class="serv_col">
-                    <a href="https://steezy.link/goodmorning" class="vk" target="_blank">
-                        <div class="project">
-                            <img src="images/tracks/saintp.jpg" alt="" class="work_image">
-                            <div class="work_content">
+                <!--7 SaintP-->
+                <li class="tracks" data-category="audio">
+                    <a href="https://steezy.link/goodmorning" class="band" target="_blank">
+                        <div class="card">
+                            <img src="images/tracks/saintp.jpg" alt="services_img" class="card__photo">
+                            <div class="card__content">
                                 <div class="track_title">Доброе утро Saint P</div>
                                 <div class="artist">Unicorn</div>
                             </div>
                         </div>
                     </a>
-                </div>
+                </li>
 
-                <!--Опять-->
-                <div class="serv_col">
-                    <a href="https://lnk.to/Opyat" class="vk" target="_blank">
-                        <div class="project">
-                            <img src="images/tracks/opayt.jpg" alt="" class="work_image">
-                            <div class="work_content">
+                <!--8 Опять-->
+                <li class="tracks" data-category="audio">
+                    <a href="https://lnk.to/Opyat" class="band" target="_blank">
+                        <div class="card">
+                            <img src="images/tracks/opayt.jpg" alt="services_img" class="card__photo">
+                            <div class="card__content">
                                 <div class="track_title">Опять</div>
                                 <div class="artist">Unicorn</div>
                             </div>
                         </div>
                     </a>
-                </div>
+                </li>
 
-                <!--Клиренс-->
-                <div class="serv_col">
-                    <a href="https://band.link/klirens" class="vk" target="_blank">
-                        <div class="project">
-                            <img src="images/tracks/clirens.jpg" alt="" class="work_image">
-                            <div class="work_content">
+                <!--9 Клиренс-->
+                <li class="tracks" data-category="audio">
+                    <a href="https://band.link/klirens" class="band" target="_blank">
+                        <div class="card">
+                            <img src="images/tracks/clirens.jpg" alt="services_img" class="card__photo">
+                            <div class="card__content">
                                 <div class="track_title">Клиренс</div>
                                 <div class="artist">Unicorn, KREEKI</div>
                             </div>
                         </div>
                     </a>
-                </div>
-     
-                <!--Не шучу-->
-                <div class="serv_col">
-                    <a href="https://band.link/neshuchu" class="vk" target="_blank">
-                        <div class="project">
-                            <img src="images/tracks/joke.jpg" alt="" class="work_image">
-                            <div class="work_content">
+                </li>
+
+                <!--10 Не шучу-->
+                <li class="tracks" data-category="audio">
+                    <a href="https://band.link/neshuchu" class="band" target="_blank">
+                        <div class="card">
+                            <img src="images/tracks/joke.jpg" alt="services_img" class="card__photo">
+                            <div class="card__content">
                                 <div class="track_title">Не шучу</div>
                                 <div class="artist">Unicorn, KREEKI</div>
                             </div>
                         </div>
                     </a>
-                </div>
+                </li>
 
-                <!--Как дела-->
-                <div class="serv_col">
-                    <a href="https://band.link/kreeki_kakdela" class="vk" target="_blank">
-                        <div class="project">
-                            <img src="images/tracks/kak dela.JPG" alt="" class="work_image">
-                            <div class="work_content">
+                <!--11 Как дела-->
+                <li class="tracks" data-category="audio">
+                    <a href="https://band.link/kreeki_kakdela" class="band" target="_blank">
+                        <div class="card">
+                            <img src="images/tracks/kak dela.jpg" alt="services_img" class="card__photo">
+                            <div class="card__content">
                                 <div class="track_title">Как дела</div>
                                 <div class="artist">KREEKI</div>
                             </div>
                         </div>
                     </a>
-                </div>
-    
-    
-                <!--Photo-->
-                <div class="serv_col">
-                    <a href="https://band.link/photokreekixlazy" class="vk" target="_blank">
-                        <div class="project">
-                            <img src="images/tracks/XJ7b1Hc_CHM.jpg" alt="" class="work_image">
-                            <div class="work_content">
+                </li>
+
+                <!--12 Photo-->
+                <li class="tracks" data-category="audio">
+                    <a href="https://band.link/photokreekixlazy" class="band" target="_blank">
+                        <div class="card">
+                            <img src="images/tracks/XJ7b1Hc_CHM.jpg" alt="services_img" class="card__photo">
+                            <div class="card__content">
                                 <div class="track_title">Photo</div>
                                 <div class="artist">KREEKI, XLAZY</div>
                             </div>
                         </div>
                     </a>
-                </div>
-    
-                <!--Ажиотаж-->
-                <div class="serv_col">
-                    <a href="https://band.link/ajiotaj" class="vk" target="_blank">
-                        <div class="project">
-                            <img src="images/tracks/SGnUbJNU2Zs.jpg" alt="" class="work_image">
-                            <div class="work_content">
+                </li>
+
+                <!--13 Ажиотаж-->
+                <li class="tracks" data-category="audio">
+                    <a href="https://band.link/ajiotaj" class="band" target="_blank">
+                        <div class="card">
+                            <img src="images/tracks/SGnUbJNU2Zs.jpg" alt="services_img" class="card__photo">
+                            <div class="card__content">
                                 <div class="track_title">Ажиотаж</div>
                                 <div class="artist">Unicorn</div>
                             </div>
                         </div>
                     </a>
-                </div>
-     
-                <!--Jeans-->
-                <div class="serv_col">
-                    <a href="https://bfan.link/jeans-1" class="vk" target="_blank">
-                        <div class="project">
-                            <img src="images/tracks/2uVRTvtNwHo.jpg" alt="" class="work_image">
-                            <div class="work_content">
+                </li>
+
+                <!--14 Jeans-->
+                <li class="tracks" data-category="audio">
+                    <a href="https://bfan.link/jeans-1j" class="band" target="_blank">
+                        <div class="card">
+                            <img src="images/tracks/2uVRTvtNwHo.jpg" alt="services_img" class="card__photo">
+                            <div class="card__content">
                                 <div class="track_title">Jeans</div>
                                 <div class="artist">GOLDENN</div>
                             </div>
                         </div>
                     </a>
-                </div>
+                </li>
 
-
-                <!--Рядом с тобой-->
-                <div class="serv_col">
-                    <a href="https://band.link/kreekichokeryadom" class="vk" target="_blank">
-                        <div class="project">
-                            <img src="images/tracks/ryadom.jpg" alt="" class="work_image">
-                            <div class="work_content">
+                <!--15 Рядом с тобой-->
+                <li class="tracks" data-category="audio">
+                    <a href="https://band.link/kreekichokeryadom" class="band" target="_blank">
+                        <div class="card">
+                            <img src="images/tracks/ryadom.jpg" alt="services_img" class="card__photo">
+                            <div class="card__content">
                                 <div class="track_title">Рядом с тобой</div>
                                 <div class="artist">KREEKI, Chokehold</div>
                             </div>
                         </div>
                     </a>
-                </div>
+                </li>
 
-                <!--Звёзды горят  prod. by Chokehold-->
-                <div class="serv_col">
-                    <a href="https://band.link/kreeki_stars" class="vk" target="_blank">
-                        <div class="project">
-                            <img src="images/tracks/star.jpg" alt="" class="work_image">
-                            <div class="work_content">
+                <!--16 Звёзды горят  prod. by Chokehold-->
+                <li class="tracks" data-category="audio">
+                    <a href="https://band.link/kreeki_stars" class="band" target="_blank">
+                        <div class="card">
+                            <img src="images/tracks/star.jpg" alt="services_img" class="card__photo">
+                            <div class="card__content">
                                 <div class="track_title">Звёзды горят</div>
                                 <div class="artist">KREEKI, Unicorn, GOLDENN</div>
                             </div>
                         </div>
                     </a>
-                </div>
-                
-            </div>
+                </li>
+
+                <!--ВидеоPlaceholder-->
+                <li class="tracks" data-category="video">
+                    <a href="https://band.link/kreeki_stars" class="band" target="_blank">
+                        <div class="card">
+                            <img src="images/services/play.png" alt="services_img" class="card__photo">
+                            <div class="card__content">
+                                <div class="track_title"></div>
+                                <div class="artist"></div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+                <!--ВидеоPlaceholder-->
+                <li class="tracks" data-category="video">
+                    <a href="https://band.link/kreeki_stars" class="band" target="_blank">
+                        <div class="card">
+                            <img src="images/services/play.png" alt="services_img" class="card__photo">
+                            <div class="card__content">
+                                <div class="track_title"></div>
+                                <div class="artist"></div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+                <!--ВидеоPlaceholder-->
+                <li class="tracks" data-category="video">
+                    <a href="https://band.link/kreeki_stars" class="band" target="_blank">
+                        <div class="card">
+                            <img src="images/services/play.png" alt="services_img" class="card__photo">
+                            <div class="card__content">
+                                <div class="track_title"></div>
+                                <div class="artist"></div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+                <!--ВидеоPlaceholder-->
+                <li class="tracks" data-category="video">
+                    <a href="https://band.link/kreeki_stars" class="band" target="_blank">
+                        <div class="card">
+                            <img src="images/services/play.png" alt="services_img" class="card__photo">
+                            <div class="card__content">
+                                <div class="track_title"></div>
+                                <div class="artist"></div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+            </ul>
         </div>
-
     </div>
-
 
     <!--Footer-->
     <footer>
@@ -328,5 +378,7 @@
 
     </footer>
 
+    <script src="js/filter.js"></script>
+    <script src="js/nav.js"></script>
 </body>
 </html>
